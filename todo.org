@@ -1,1 +1,2 @@
 * TODO Fix variable prefixes to make linter happy
+* TODO Use tabbar along with stickyfunc
