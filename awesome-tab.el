@@ -1,4 +1,4 @@
-;; awesome-tab.el --- Provide an out of box configuration to use tabbar in Emacs.
+;;; awesome-tab.el --- Provide an out of box configuration to use tabbar.
 
 ;; Filename: awesome-tab.el
 ;; Description: Provide an out of box configuration to use tabbar in Emacs.
@@ -7,16 +7,11 @@
 ;; Copyright (C) 2018, Andy Stewart, all rights reserved.
 ;; Created: 2018-09-17 22:14:34
 ;; Version: 0.6
+;; Package-Requires: ((emacs "24.4") (projectile "1.0.0"))
 ;; Last-Updated: 2018-09-20 18:02:42
 ;;           By: Andy Stewart
 ;; URL: http://www.emacswiki.org/emacs/download/awesome-tab.el
-;; Keywords:
-;; Compatibility: GNU Emacs 27.0.50
-;;
-;; Features that might be required by this library:
-;;
-;; `tabbar' `projectile'
-;;
+;; Keywords: convenience
 
 ;;; This file is NOT part of GNU Emacs
 
@@ -487,8 +482,8 @@ Other buffer group by `projectile-project-p' with project name."
         (when (featurep 'helm)
           (require 'helm)
           (helm-build-sync-source "Tabbar Group"
-            :candidates #'tabbar-get-groups
-            :action '(("Switch to group" . tabbar-switch-group))))))
+                                  :candidates #'tabbar-get-groups
+                                  :action '(("Switch to group" . tabbar-switch-group))))))
 
 ;; Ivy source for switching group in ivy.
 (defvar ivy-source-tabbar-group nil)
