@@ -382,7 +382,7 @@ Optional argument REVERSED default is move backward, if reversed is non-nil move
                ;; 'magit-status-mode-hook
                ;; 'magit-popup-mode-hook
                'magit-process-mode-hook
-               'text-mode-hook
+               ;; 'text-mode-hook
                'reb-mode-hook
                ))
   (add-hook hook '(lambda () (setq-local header-line-format nil))))
