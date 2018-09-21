@@ -7,7 +7,7 @@
 ;; Copyright (C) 2018, Andy Stewart, all rights reserved.
 ;; Created: 2018-09-17 22:14:34
 ;; Version: 0.6
-;; Package-Requires: ((emacs "24.4") (projectile "1.0.0") (tabbar "2.0.0"))
+;; Package-Requires: ((emacs "24.4") (projectile "1.0.0"))
 ;; Last-Updated: 2018-09-20 18:02:42
 ;;           By: Andy Stewart
 ;; URL: http://www.emacswiki.org/emacs/download/awesome-tab.el
